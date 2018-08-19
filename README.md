@@ -1,4 +1,3 @@
-# NaverCafeBackupProject
 #### "개념 없는 운영자가 소유한 카페들은 매물로 팔리기도 합니다." 책 <창작자의 나라 (김인성)> 중.....
 
 # 여러분의 카페는 안녕하십니까?
@@ -43,5 +42,15 @@ GPL에 대해 간단히 설명을 드리자면, 제 스크립트(소스)를 어�
 [파일보기](https://github.com/wjdgowns77/NaverCafeBackupProject/blob/master/NaverCafeBackupProgram.ipynb)     
 [깃허브 페이지 보기](https://github.com/wjdgowns77/NaverCafeBackupProject/) 
   
+# 링크
+http://ncbp.nonaver.com (이곳 링크)   
+https://cafe.naver.com/skyplanet/ (제가 활동중인 카페)    
+http://imholic.com (개인 홈페이지)    
+http://imholic.kr (팬택 휴대폰 PDL파일 다운로드)       
+      
+      
+p.s.: 제가 도메인이 좀 많지요? 안그래도 도메인 사날리다가 허리휘게 생겼습니다.....     
+사실 지금 가지고 있는게 4개인데, 조만간 6개를 더 사야 합니다.   
+일년에 도메인 등록비가 22만원씩 나올 일도 멀지 않은것 같습니다.       
 
 admin@nonaver.com
