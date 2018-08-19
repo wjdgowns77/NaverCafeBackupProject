@@ -37,4 +37,11 @@ miniconda와 jupyter notebook, 창문10(win10 Build 16299.RS3)으로 기본 테�
 라이선스(사용권한)은 간단히 GNU-GPL 입니다.  
 GPL에 대해 간단히 설명을 드리자면, 제 스크립트(소스)를 어떻게 쓰시든지 자유이지만, 그걸로 뭔가 다른 프로그램을 만드셨으면 그 만든 결과물을 저랑 같은 라이선스(GPL)로 배표하셔야 합니다. https://namu.wiki/w/GPL       
 어떤 용도로 쓰일지 혹시 몰라 GPL걸었으니 곤란하시다면 따로 연락하세요...^^  
+
+# 파일 다운받기 
+[ipynb파일 받기](http://ncbp.nonaver.com/NaverCafeBackupProgram.ipynb)  
+[파일보기](https://github.com/wjdgowns77/NaverCafeBackupProject/blob/master/NaverCafeBackupProgram.ipynb)     
+[깃허브 페이지 보기](https://github.com/wjdgowns77/NaverCafeBackupProject/) 
+  
+
 admin@nonaver.com
