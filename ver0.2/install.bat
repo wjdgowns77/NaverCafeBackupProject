@@ -1,101 +1,93 @@
 @ECHO OFF
 CLS
-ECHO ÇÁ·Î±×·¥ ±¸µ¿ ½ÃÀÛÁß....
+ECHO í”„ë¡œê·¸ëž¨ êµ¬ë™ ì‹œìž‘ì¤‘....
 ECHO install Naver Cafe Backup Program.....
-ECHO ÀÌ ÇÁ·Î±×·¥ÀÇ ÀúÀÛ±Ç ±ÔÁ¤Àº GPL v3¸¦ Àû¿ëÁßÀÔ´Ï´Ù.
+ECHO ì´ í”„ë¡œê·¸ëž¨ì˜ ì €ìž‘ê¶Œ ê·œì •ì€ GPL v3ë¥¼ ì ìš©ì¤‘ìž…ë‹ˆë‹¤.
 timeout 2
 
 
-REM 0. --------------- programdataÆú´õ Á¸Àç¿©ºÎ,½ÇÇà°¡´É¿©ºÎ È®ÀÎ(ÆÄÀÏÁ¸Àç¿©ºÎ,ºí·¢¸®½ºÆ® È®ÀÎ)-----------------
+REM 0. --------------- programdataí´ë” ì¡´ìž¬ì—¬ë¶€,ì‹¤í–‰ê°€ëŠ¥ì—¬ë¶€ í™•ì¸(íŒŒì¼ì¡´ìž¬ì—¬ë¶€,ë¸”ëž™ë¦¬ìŠ¤íŠ¸ í™•ì¸)-----------------
 IF NOT EXIST "programdata" (
-	ECHO programdata Æú´õ¸¦ ÀÌ ¹èÄ¡ÆÄÀÏ°ú °°Àº °æ·Î¿¡ ³õ°í ½ÇÇà½ÃÄÑ ÁÖ¼¼¿ä!
-	ECHO ¾ÐÃà»óÅÂ¿¡¼­ ½ÇÇàÇÏ½Ã°í °è½Ã´Ù¸é, ¾ÐÃàÀ» ÇØÁ¦ÇØ ÁÖ¼¼¿ä.
-	ECHO ¹«½ÃÇÏ°í ÁøÇàÇÏ½Ã·Á¸é, ¾Æ¹« Å°³ª ´©¸£¼¼¿ä.
+	ECHO programdata í´ë”ë¥¼ ì´ ë°°ì¹˜íŒŒì¼ê³¼ ê°™ì€ ê²½ë¡œì— ë†“ê³  ì‹¤í–‰ì‹œì¼œ ì£¼ì„¸ìš”!
+	ECHO ì••ì¶•ìƒíƒœì—ì„œ ì‹¤í–‰í•˜ì‹œê³  ê³„ì‹œë‹¤ë©´, ì••ì¶•ì„ í•´ì œí•´ ì£¼ì„¸ìš”.
+	ECHO ë¬´ì‹œí•˜ê³  ì§„í–‰í•˜ì‹œë ¤ë©´, ì•„ë¬´ í‚¤ë‚˜ ëˆ„ë¥´ì„¸ìš”.
 	PAUSE)
 IF NOT EXIST "programdata\NCBP.bat" (
-	ECHO programdata ³»ºÎÀÇ NCBP.bat ÆÄÀÏÀÌ ¾øÀ¸¸é ¼³Ä¡µÉ ¼ö ¾ø½À´Ï´Ù!
-	ECHO ¾ÐÃà»óÅÂ¿¡¼­ ½ÇÇàÇÏ½Ã°í °è½Ã´Ù¸é, ¾ÐÃàÀ» ÇØÁ¦ÇØ ÁÖ¼¼¿ä.
-	ECHO ¹«½ÃÇÏ°í ÁøÇàÇÏ½Ã·Á¸é, ¾Æ¹« Å°³ª ´©¸£¼¼¿ä.
+	ECHO programdata ë‚´ë¶€ì˜ NCBP.bat íŒŒì¼ì´ ì—†ìœ¼ë©´ ì„¤ì¹˜ë  ìˆ˜ ì—†ìŠµë‹ˆë‹¤!
+	ECHO ì••ì¶•ìƒíƒœì—ì„œ ì‹¤í–‰í•˜ì‹œê³  ê³„ì‹œë‹¤ë©´, ì••ì¶•ì„ í•´ì œí•´ ì£¼ì„¸ìš”.
+	ECHO ë¬´ì‹œí•˜ê³  ì§„í–‰í•˜ì‹œë ¤ë©´, ì•„ë¬´ í‚¤ë‚˜ ëˆ„ë¥´ì„¸ìš”.
 	PAUSE)
 IF NOT EXIST "programdata\NCBP.py" (
-	ECHO programdata ³»ºÎÀÇ NCBP.py ÆÄÀÏÀÌ ¾øÀ¸¸é ¼³Ä¡µÉ ¼ö ¾ø½À´Ï´Ù!
-	ECHO ¾ÐÃà»óÅÂ¿¡¼­ ½ÇÇàÇÏ½Ã°í °è½Ã´Ù¸é, ¾ÐÃàÀ» ÇØÁ¦ÇØ ÁÖ¼¼¿ä.
-	ECHO ¹«½ÃÇÏ°í ÁøÇàÇÏ½Ã·Á¸é, ¾Æ¹« Å°³ª ´©¸£¼¼¿ä.
+	ECHO programdata ë‚´ë¶€ì˜ NCBP.py íŒŒì¼ì´ ì—†ìœ¼ë©´ ì„¤ì¹˜ë  ìˆ˜ ì—†ìŠµë‹ˆë‹¤!
+	ECHO ì••ì¶•ìƒíƒœì—ì„œ ì‹¤í–‰í•˜ì‹œê³  ê³„ì‹œë‹¤ë©´, ì••ì¶•ì„ í•´ì œí•´ ì£¼ì„¸ìš”.
+	ECHO ë¬´ì‹œí•˜ê³  ì§„í–‰í•˜ì‹œë ¤ë©´, ì•„ë¬´ í‚¤ë‚˜ ëˆ„ë¥´ì„¸ìš”.
 	PAUSE)
-IF NOT EXIST "programdata\NCBP_install.bat" (
-	ECHO programdata ³»ºÎÀÇ NCBP_install.bat  ÆÄÀÏÀÌ ¾øÀ¸¸é ¼³Ä¡µÉ ¼ö ¾ø½À´Ï´Ù!
-	ECHO ¾ÐÃà»óÅÂ¿¡¼­ ½ÇÇàÇÏ½Ã°í °è½Ã´Ù¸é, ¾ÐÃàÀ» ÇØÁ¦ÇØ ÁÖ¼¼¿ä.
-	ECHO ¹«½ÃÇÏ°í ÁøÇàÇÏ½Ã·Á¸é, ¾Æ¹« Å°³ª ´©¸£¼¼¿ä.
-	PAUSE)
-IF NOT EXIST "programdata\NCBP_WK.bat" (
-	ECHO programdata ³»ºÎÀÇ NCBP_WK.bat ÆÄÀÏÀÌ ¾øÀ¸¸é ¼³Ä¡µÉ ¼ö ¾ø½À´Ï´Ù!
-	ECHO ¾ÐÃà»óÅÂ¿¡¼­ ½ÇÇàÇÏ½Ã°í °è½Ã´Ù¸é, ¾ÐÃàÀ» ÇØÁ¦ÇØ ÁÖ¼¼¿ä.
-	ECHO ¹«½ÃÇÏ°í ÁøÇàÇÏ½Ã·Á¸é, ¾Æ¹« Å°³ª ´©¸£¼¼¿ä.
-	PAUSE)
+	
 IF NOT EXIST "programdata\chromedriver.exe" (
-	ECHO programdata ³»ºÎÀÇ chromedriver.exe ÆÄÀÏÀÌ ¾øÀ¸¸é ¼³Ä¡µÉ ¼ö ¾ø½À´Ï´Ù!
-	ECHO ¾ÐÃà»óÅÂ¿¡¼­ ½ÇÇàÇÏ½Ã°í °è½Ã´Ù¸é, ¾ÐÃàÀ» ÇØÁ¦ÇØ ÁÖ¼¼¿ä.
-	ECHO ¹«½ÃÇÏ°í ÁøÇàÇÏ½Ã·Á¸é, ¾Æ¹« Å°³ª ´©¸£¼¼¿ä.
+	ECHO programdata ë‚´ë¶€ì˜ chromedriver.exe íŒŒì¼ì´ ì—†ìœ¼ë©´ chromedriverì„¤ì¹˜ê°€ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤!
+	ECHO ì••ì¶•ìƒíƒœì—ì„œ ì‹¤í–‰í•˜ì‹œê³  ê³„ì‹œë‹¤ë©´, ì••ì¶•ì„ í•´ì œí•´ ì£¼ì„¸ìš”.
+	ECHO ë¬´ì‹œí•˜ê³  ì§„í–‰í•˜ì‹œë ¤ë©´, ì•„ë¬´ í‚¤ë‚˜ ëˆ„ë¥´ì„¸ìš”.
 	PAUSE)
 IF NOT EXIST "programdata\miniconda3.exe" (
-	ECHO programdata ³»ºÎÀÇ miniconda3.exe ÆÄÀÏÀÌ ¾øÀ¸¸é ¼³Ä¡µÉ ¼ö ¾ø½À´Ï´Ù!
-	ECHO ¾ÐÃà»óÅÂ¿¡¼­ ½ÇÇàÇÏ½Ã°í °è½Ã´Ù¸é, ¾ÐÃàÀ» ÇØÁ¦ÇØ ÁÖ¼¼¿ä.
-	ECHO ¹«½ÃÇÏ°í ÁøÇàÇÏ½Ã·Á¸é, ¾Æ¹« Å°³ª ´©¸£¼¼¿ä.
+	ECHO programdata ë‚´ë¶€ì˜ miniconda3.exe íŒŒì¼ì´ ì—†ìœ¼ë©´ minicondaì„¤ì¹˜ê°€ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤!
+	ECHO ì••ì¶•ìƒíƒœì—ì„œ ì‹¤í–‰í•˜ì‹œê³  ê³„ì‹œë‹¤ë©´, ì••ì¶•ì„ í•´ì œí•´ ì£¼ì„¸ìš”.
+	ECHO ë¬´ì‹œí•˜ê³  ì§„í–‰í•˜ì‹œë ¤ë©´, ì•„ë¬´ í‚¤ë‚˜ ëˆ„ë¥´ì„¸ìš”.
 	PAUSE)
 IF NOT EXIST "programdata\NaverCafeBackupProgram.lnk" (
-	ECHO programdata ³»ºÎÀÇ NaverCafeBackupProgram.lnk ÆÄÀÏÀÌ ¾øÀ¸¸é ¼³Ä¡µÉ ¼ö ¾ø½À´Ï´Ù!
-	ECHO ¾ÐÃà»óÅÂ¿¡¼­ ½ÇÇàÇÏ½Ã°í °è½Ã´Ù¸é, ¾ÐÃàÀ» ÇØÁ¦ÇØ ÁÖ¼¼¿ä.
-	ECHO ¹«½ÃÇÏ°í ÁøÇàÇÏ½Ã·Á¸é, ¾Æ¹« Å°³ª ´©¸£¼¼¿ä.
+	ECHO programdata ë‚´ë¶€ì˜ NaverCafeBackupProgram.lnk íŒŒì¼ì´ ì—†ìœ¼ë©´ ì„¤ì¹˜ë  ìˆ˜ ì—†ìŠµë‹ˆë‹¤!
+	ECHO ì••ì¶•ìƒíƒœì—ì„œ ì‹¤í–‰í•˜ì‹œê³  ê³„ì‹œë‹¤ë©´, ì••ì¶•ì„ í•´ì œí•´ ì£¼ì„¸ìš”.
+	ECHO ë¬´ì‹œí•˜ê³  ì§„í–‰í•˜ì‹œë ¤ë©´, ì•„ë¬´ í‚¤ë‚˜ ëˆ„ë¥´ì„¸ìš”.
 	PAUSE)
 IF NOT EXIST "programdata\WKhtmltopdf.exe" (
-	ECHO programdata ³»ºÎÀÇ WKhtmltopdf.exe ÆÄÀÏÀÌ ¾øÀ¸¸é ¼³Ä¡µÉ ¼ö ¾ø½À´Ï´Ù!
-	ECHO ¾ÐÃà»óÅÂ¿¡¼­ ½ÇÇàÇÏ½Ã°í °è½Ã´Ù¸é, ¾ÐÃàÀ» ÇØÁ¦ÇØ ÁÖ¼¼¿ä.
-	ECHO ¹«½ÃÇÏ°í ÁøÇàÇÏ½Ã·Á¸é, ¾Æ¹« Å°³ª ´©¸£¼¼¿ä.
+	ECHO programdata ë‚´ë¶€ì˜ WKhtmltopdf.exe íŒŒì¼ì´ ì—†ìœ¼ë©´ í¬ë¡¤ë§ë³€í™˜ í”„ë¡œê·¸ëž¨ ì„¤ì¹˜ê°€ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤!
+	ECHO ì••ì¶•ìƒíƒœì—ì„œ ì‹¤í–‰í•˜ì‹œê³  ê³„ì‹œë‹¤ë©´, ì••ì¶•ì„ í•´ì œí•´ ì£¼ì„¸ìš”.
+	ECHO ë¬´ì‹œí•˜ê³  ì§„í–‰í•˜ì‹œë ¤ë©´, ì•„ë¬´ í‚¤ë‚˜ ëˆ„ë¥´ì„¸ìš”.
 	PAUSE)
-REM programdataÆú´õ ³»ºÎ ÆÄÀÏ Á¸Àç¿©ºÎ È®ÀÎ³¡.
-REM »ç¿ëÀÚÀÌ¸§(ºí·¢¸®½ºÆ®) È®ÀÎ
-REM °æ°í:¾Æ·¡ ½ºÅ©¸³Æ®(ÃÑ6ÁÙ)ÀÇ ¼öÁ¤À» ¿øÄ¢»ó ±ÝÁöÇÕ´Ï´Ù.
+	
+REM programdataí´ë” ë‚´ë¶€ íŒŒì¼ ì¡´ìž¬ì—¬ë¶€ í™•ì¸ë.
+REM ì‚¬ìš©ìžì´ë¦„(ë¸”ëž™ë¦¬ìŠ¤íŠ¸) í™•ì¸
+REM ê²½ê³ :ì•„ëž˜ ìŠ¤í¬ë¦½íŠ¸(ì´6ì¤„)ì˜ ìˆ˜ì •ì„ ì›ì¹™ìƒ ê¸ˆì§€í•©ë‹ˆë‹¤.
 REM ------
 IF "%username%"=="chang" (
-ECHO ÇØ´ç »ç¿ëÀÚ¸¦ ´ë»óÀ¸·Î´Â ¼³Ä¡°¡ ºÒ°¡´ÉÇÕ´Ï´Ù.
-ECHO ¿À·ù¶ó°í »ý°¢ÇÏ½Å´Ù¸é, ¼³Ä¡ºÒ°¡Çö»ó ÇØ°áÀ» À§ÇØ »ç¿ëÀÚÀÌ¸§À» Ã·ºÎÇÏ¿© admin@nonaver.comÀ¸·Î ¸ÞÀÏÀ» º¸³»ÁÖ¼¼¿ä.
+ECHO í•´ë‹¹ ì‚¬ìš©ìžë¥¼ ëŒ€ìƒìœ¼ë¡œëŠ” ì„¤ì¹˜ê°€ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤.
+ECHO ì˜¤ë¥˜ë¼ê³  ìƒê°í•˜ì‹ ë‹¤ë©´, ì„¤ì¹˜ë¶ˆê°€í˜„ìƒ í•´ê²°ì„ ìœ„í•´ ì‚¬ìš©ìžì´ë¦„ì„ ì²¨ë¶€í•˜ì—¬ admin@nonaver.comìœ¼ë¡œ ë©”ì¼ì„ ë³´ë‚´ì£¼ì„¸ìš”.
 PAUSE
 exit
 )
 REM -------
-REM °æ°í:NCBPÃÖÃÊ Á¦ÀÛÀÚ¿Ü À§ ½ºÅ©¸³Æ®(ÃÑ6ÁÙ)ÀÇ »èÁ¦/¼öÁ¤À» ¿øÄ¢»ó ±ÝÁöÇÕ´Ï´Ù.(ÁÖ¼®Ã³¸®´Â Çã¿ëÇÕ´Ï´Ù.)
+REM ê²½ê³ :NCBPìµœì´ˆ ì œìž‘ìžì™¸ ìœ„ ìŠ¤í¬ë¦½íŠ¸(ì´6ì¤„)ì˜ ì‚­ì œ/ìˆ˜ì •ì„ ì›ì¹™ìƒ ê¸ˆì§€í•©ë‹ˆë‹¤.(ì£¼ì„ì²˜ë¦¬ëŠ” í—ˆìš©í•©ë‹ˆë‹¤.)
 
-REM ÇÁ·Î±×·¥ ¼³Ä¡¿©ºÎ È®ÀÎ
-REM ÆÄÀÌ½ã ¼³Ä¡¿©ºÎ È®ÀÎ
+REM í”„ë¡œê·¸ëž¨ ì„¤ì¹˜ì—¬ë¶€ í™•ì¸
+REM íŒŒì´ì¬ ì„¤ì¹˜ì—¬ë¶€ í™•ì¸
 IF NOT EXIST "C:\ProgramData\Miniconda3" (
-	ECHO Miniconda3°¡ ¼³Ä¡µÇ¾î ÀÖÁö ¾Ê½À´Ï´Ù.
-	ECHO ¼³Ä¡ ÇÁ·Î±×·¥À» ½ÃÀÛÇÕ´Ï´Ù.
-	ECHO ¼³Ä¡½Ã Install for All Users¸¦ ¼±ÅÃÇÏ¼Å¾ß ÇÕ´Ï´Ù.
+	ECHO Miniconda3ê°€ ì„¤ì¹˜ë˜ì–´ ìžˆì§€ ì•ŠìŠµë‹ˆë‹¤.
+	ECHO ì„¤ì¹˜ í”„ë¡œê·¸ëž¨ì„ ì‹œìž‘í•©ë‹ˆë‹¤.
+	ECHO ì„¤ì¹˜ì‹œ Install for All Usersë¥¼ ì„ íƒí•˜ì…”ì•¼ í•©ë‹ˆë‹¤.
 	timeout 10
 	start "programdata\miniconda3.exe"
-	ECHO ¼³Ä¡¿Ï·áÈÄ ¾Æ¹«Å°³ª ´©¸£¼¼¿ä.....
+	ECHO ì„¤ì¹˜ì™„ë£Œí›„ ì•„ë¬´í‚¤ë‚˜ ëˆ„ë¥´ì„¸ìš”.....
 	PAUSE )
 
-REM Wkhtmltopdf¼³Ä¡¿©ºÎ È®ÀÎ
+REM Wkhtmltopdfì„¤ì¹˜ì—¬ë¶€ í™•ì¸
 IF NOT EXIST "C:\Program Files\wkhtmltopdf" (
-	ECHO wkHTMLtoPDF°¡ ¼³Ä¡µÇ¾î ÀÖÁö ¾Ê½À´Ï´Ù.
-	ECHO ¼³Ä¡ ÇÁ·Î±×·¥À» ½ÃÀÛÇÕ´Ï´Ù.
+	ECHO wkHTMLtoPDFê°€ ì„¤ì¹˜ë˜ì–´ ìžˆì§€ ì•ŠìŠµë‹ˆë‹¤.
+	ECHO ì„¤ì¹˜ í”„ë¡œê·¸ëž¨ì„ ì‹œìž‘í•©ë‹ˆë‹¤.
 	start "programdata\wkhtmltopdf.exe"
-	ECHO ¼³Ä¡ ¿Ï·á ÈÄ ¾Æ¹«Å°³ª ´©¸£¼¼¿ä....
+	ECHO ì„¤ì¹˜ ì™„ë£Œ í›„ ì•„ë¬´í‚¤ë‚˜ ëˆ„ë¥´ì„¸ìš”....
 	PAUSE )
 
-REM ±¸±ÛÅ©·Ó ¼³Ä¡¿©ºÎ È®ÀÎ
+REM êµ¬ê¸€í¬ë¡­ ì„¤ì¹˜ì—¬ë¶€ í™•ì¸
 IF NOT EXIST "C:\Program Files (x86)\Google\Chrome" (
-	ECHO ±¸±Û Å©·ÒÀÌ ¼³Ä¡µÇ¾î ÀÖÁö ¾Ê½À´Ï´Ù.
-	ECHO ±¸±Û Å©·ÒÀº ¼³Ä¡ÆÄÀÏÀÌ ³»ÀåµÇ¾î ÀÖÁö ¾Ê½À´Ï´Ù.
-	ECHO ±¸±Û Å©·ÒÀ» ¼³Ä¡ÇÏ½Å ÈÄ Àç½ÇÇàÇØ ÁÖ¼¼¿ä.
+	ECHO êµ¬ê¸€ í¬ë¡¬ì´ ì„¤ì¹˜ë˜ì–´ ìžˆì§€ ì•ŠìŠµë‹ˆë‹¤.
+	ECHO êµ¬ê¸€ í¬ë¡¬ì€ ì„¤ì¹˜íŒŒì¼ì´ ë‚´ìž¥ë˜ì–´ ìžˆì§€ ì•ŠìŠµë‹ˆë‹¤.
+	ECHO êµ¬ê¸€ í¬ë¡¬ì„ ì„¤ì¹˜í•˜ì‹  í›„ ìž¬ì‹¤í–‰í•´ ì£¼ì„¸ìš”.
 	PAUSE
 	exit )
 
-REM ÇÁ·Î±×·¥ÃÊ±âÈ­¸é
+REM í”„ë¡œê·¸ëž¨ì´ˆê¸°í™”ë©´
 TITLE install NCBP program.....
 CLS
-ECHO  ¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡
+ECHO  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 ECHO NNNNNNNN        NNNNNNNN       CCCCCCCCCCCCBBBBBBBBBBBBBBBBB  PPPPPPPPPPPPPPPPP   
 ECHO N:::::::N       N::::::N    CCC::::::::::::B::::::::::::::::B P::::::::::::::::P  
 ECHO N::::::::N      N::::::N  CC:::::::::::::::B::::::BBBBBB:::::BP::::::PPPPPP:::::P 
@@ -114,82 +106,82 @@ ECHO N::::::N        N::::::N    CCC::::::::::::B::::::::::::::::B P::::::::P
 ECHO NNNNNNNN         NNNNNNN       CCCCCCCCCCCCBBBBBBBBBBBBBBBBB  PPPPPPPPPP          
 ECHO.                                                          
 ECHO                         IM - NCBP
-ECHO                 ¹öÀü 0.0.1 (2018.12.26¹èÆ÷)
+ECHO                 ë²„ì „ 0.0.1 (2018.12.26ë°°í¬)
 ECHO	          Naver Cafe Backup Project/Program	                     
-ECHO           ³×ÀÌ¹ö Ä«Æä ¹é¾÷ ÇÁ·Î±×·¥ ¼³Ä¡¸¦ ½ÃÀÛÇÕ´Ï´Ù...         
-ECHO  ¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡
-REM ÇÁ·Î±×·¥ ¼³Ä¡ÀÇ»ç È®ÀÎ
-ECHO ¾Æ¹« Å°³ª ´­·¯¼­ ¼³Ä¡¸¦ ½ÃÀÛÇÏ¼¼¿ä.
+ECHO           ë„¤ì´ë²„ ì¹´íŽ˜ ë°±ì—… í”„ë¡œê·¸ëž¨ ì„¤ì¹˜ë¥¼ ì‹œìž‘í•©ë‹ˆë‹¤...         
+ECHO  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+REM í”„ë¡œê·¸ëž¨ ì„¤ì¹˜ì˜ì‚¬ í™•ì¸
+ECHO ì•„ë¬´ í‚¤ë‚˜ ëˆŒëŸ¬ì„œ ì„¤ì¹˜ë¥¼ ì‹œìž‘í•˜ì„¸ìš”.
 PAUSE
 CLS
 
 REM ------------------------------------------------------------
-REM 1.ÇÁ·Î±×·¥ Æú´õ »ý¼º...
-ECHO 1.ÇÁ·Î±×·¥ Æú´õ »ý¼º
-ECHO C:\Users\%username%\NCBPÆú´õ¸¦ »ý¼ºÇÕ´Ï´Ù
+REM 1.í”„ë¡œê·¸ëž¨ í´ë” ìƒì„±...
+ECHO 1.í”„ë¡œê·¸ëž¨ í´ë” ìƒì„±
+ECHO C:\Users\%username%\NCBPí´ë”ë¥¼ ìƒì„±í•©ë‹ˆë‹¤
 mkdir C:\Users\%username%\NCBP
-ECHO C:\Users\%username%\NCBP\CAFE Æú´õ¸¦ »ý¼ºÇÕ´Ï´Ù.
+ECHO C:\Users\%username%\NCBP\CAFE í´ë”ë¥¼ ìƒì„±í•©ë‹ˆë‹¤.
 mkdir C:\Users\%username%\NCBP\CAFE
-ECHO C:\Users\%username%\NCBP\programdata Æú´õ¸¦ »ý¼ºÇÕ´Ï´Ù.
+ECHO C:\Users\%username%\NCBP\programdata í´ë”ë¥¼ ìƒì„±í•©ë‹ˆë‹¤.
 mkdir C:\Users\%username%\NCBP\programdata
 timeout 1
-REM Æú´õ»ý¼ºÈ®ÀÎ
+REM í´ë”ìƒì„±í™•ì¸
 IF NOT EXIST "C:\Users\%username%\NCBP" (
-	ECHO Æú´õ»ý¼º ¿À·ù!
-	ECHO ¼³Ä¡¿À·ù! NCBP.NoNaver.Com¿¡ ÀÖ´Â "¿À·ù>Æú´õ»ý¼º¿À·ù"Ç×¸ñÀ» Âü°íÇÏ¿© ¼öµ¿ »ý¼ºÇÏ¼¼¿ä.
+	ECHO í´ë”ìƒì„± ì˜¤ë¥˜!
+	ECHO ì„¤ì¹˜ì˜¤ë¥˜! NCBP.NoNaver.Comì— ìžˆëŠ” "ì˜¤ë¥˜>í´ë”ìƒì„±ì˜¤ë¥˜"í•­ëª©ì„ ì°¸ê³ í•˜ì—¬ ìˆ˜ë™ ìƒì„±í•˜ì„¸ìš”.
 	PAUSE)
 IF NOT EXIST "C:\Users\%username%\NCBP\CAFE" (
-	ECHO Æú´õ»ý¼º ¿À·ù!
-	ECHO ¼³Ä¡¿À·ù! NCBP.NoNaver.Com¿¡ ÀÖ´Â "¿À·ù>Æú´õ»ý¼º¿À·ù"Ç×¸ñÀ» Âü°íÇÏ¿© ¼öµ¿ »ý¼ºÇÏ¼¼¿ä.
+	ECHO í´ë”ìƒì„± ì˜¤ë¥˜!
+	ECHO ì„¤ì¹˜ì˜¤ë¥˜! NCBP.NoNaver.Comì— ìžˆëŠ” "ì˜¤ë¥˜>í´ë”ìƒì„±ì˜¤ë¥˜"í•­ëª©ì„ ì°¸ê³ í•˜ì—¬ ìˆ˜ë™ ìƒì„±í•˜ì„¸ìš”.
 	PAUSE)
 IF NOT EXIST "C:\Users\%username%\NCBP\programdata" (
-	ECHO Æú´õ»ý¼º ¿À·ù!
-	ECHO ¼³Ä¡¿À·ù! NCBP.NoNaver.Com¿¡ ÀÖ´Â "¿À·ù>Æú´õ»ý¼º¿À·ù"Ç×¸ñÀ» Âü°íÇÏ¿© ¼öµ¿ »ý¼ºÇÏ¼¼¿ä.
+	ECHO í´ë”ìƒì„± ì˜¤ë¥˜!
+	ECHO ì„¤ì¹˜ì˜¤ë¥˜! NCBP.NoNaver.Comì— ìžˆëŠ” "ì˜¤ë¥˜>í´ë”ìƒì„±ì˜¤ë¥˜"í•­ëª©ì„ ì°¸ê³ í•˜ì—¬ ìˆ˜ë™ ìƒì„±í•˜ì„¸ìš”.
 	PAUSE)
-REM Æú´õ»ý¼ºÈ®ÀÎ ¿Ï·á
+REM í´ë”ìƒì„±í™•ì¸ ì™„ë£Œ
 
-REM ÇÁ·Î±×·¥ Æú´õ »ý¼º¿Ï·á.
+REM í”„ë¡œê·¸ëž¨ í´ë” ìƒì„±ì™„ë£Œ.
 REM ------------------------------------------------------------
-REM 2.ÇÁ·Î±×·¥ ÆÄÀÏ ¼³Ä¡µð·ºÅÍ¸®·Î ÀÌµ¿
+REM 2.í”„ë¡œê·¸ëž¨ íŒŒì¼ ì„¤ì¹˜ë””ë ‰í„°ë¦¬ë¡œ ì´ë™
 ECHO.
 ECHO.
-ECHO 2. ÇÁ·Î±×·¥ ±¸µ¿¿¡ ÇÊ¿äÇÑ ÆÄÀÏÀ» ¼³Ä¡ µð·ºÅÍ¸®·Î ÀÌµ¿ÁßÀÔ´Ï´Ù.
+ECHO 2. í”„ë¡œê·¸ëž¨ êµ¬ë™ì— í•„ìš”í•œ íŒŒì¼ì„ ì„¤ì¹˜ ë””ë ‰í„°ë¦¬ë¡œ ì´ë™ì¤‘ìž…ë‹ˆë‹¤.
 COPY "programdata\NCBP.bat" "C:\Users\%username%\NCBP\programdata\NCBP.bat"
 COPY "programdata\NCBP.py" "C:\Users\%username%\NCBP\programdata\NCBP.py"
 COPY "programdata\NCBP_WK.bat" "C:\Users\%username%\NCBP\programdata\NCBP_WK.bat"
 COPY "programdata\chromedriver.exe" "C:\Users\%username%\NCBP\programdata\chromedriver.exe"
 
-REM ÀÌµ¿¿©ºÎ È®ÀÎ
+REM ì´ë™ì—¬ë¶€ í™•ì¸
 IF NOT EXIST "C:\Users\%username%\NCBP\programdata\NCBP.bat" (
-	ECHO ÆÄÀÏ º¹»ç ¿À·ù!
-	ECHO ¼³Ä¡¿À·ù! NCBP.NoNaver.Com¿¡ ÀÖ´Â "¿À·ù>ÆÄÀÏº¹»ç¿À·ù"Ç×¸ñÀ» Âü°íÇÏ¿© ÆÄÀÏÀ» ¼öµ¿ ÀÌµ¿ÇÏ¼¼¿ä.
+	ECHO íŒŒì¼ ë³µì‚¬ ì˜¤ë¥˜!
+	ECHO ì„¤ì¹˜ì˜¤ë¥˜! NCBP.NoNaver.Comì— ìžˆëŠ” "ì˜¤ë¥˜>íŒŒì¼ë³µì‚¬ì˜¤ë¥˜"í•­ëª©ì„ ì°¸ê³ í•˜ì—¬ íŒŒì¼ì„ ìˆ˜ë™ ì´ë™í•˜ì„¸ìš”.
 	PAUSE)
 IF NOT EXIST "C:\Users\%username%\NCBP\programdata\NCBP.py" (
-	ECHO ÆÄÀÏ º¹»ç ¿À·ù!
-	ECHO ¼³Ä¡¿À·ù! NCBP.NoNaver.Com¿¡ ÀÖ´Â "¿À·ù>ÆÄÀÏº¹»ç¿À·ù"Ç×¸ñÀ» Âü°íÇÏ¿© ÆÄÀÏÀ» ¼öµ¿ ÀÌµ¿ÇÏ¼¼¿ä.
+	ECHO íŒŒì¼ ë³µì‚¬ ì˜¤ë¥˜!
+	ECHO ì„¤ì¹˜ì˜¤ë¥˜! NCBP.NoNaver.Comì— ìžˆëŠ” "ì˜¤ë¥˜>íŒŒì¼ë³µì‚¬ì˜¤ë¥˜"í•­ëª©ì„ ì°¸ê³ í•˜ì—¬ íŒŒì¼ì„ ìˆ˜ë™ ì´ë™í•˜ì„¸ìš”.
 	PAUSE)
 IF NOT EXIST "C:\Users\%username%\NCBP\programdata\NCBP_WK.bat" (
-	ECHO ÆÄÀÏ º¹»ç ¿À·ù!
-	ECHO ¼³Ä¡¿À·ù! NCBP.NoNaver.Com¿¡ ÀÖ´Â "¿À·ù>ÆÄÀÏº¹»ç¿À·ù"Ç×¸ñÀ» Âü°íÇÏ¿© ÆÄÀÏÀ» ¼öµ¿ ÀÌµ¿ÇÏ¼¼¿ä.
+	ECHO íŒŒì¼ ë³µì‚¬ ì˜¤ë¥˜!
+	ECHO ì„¤ì¹˜ì˜¤ë¥˜! NCBP.NoNaver.Comì— ìžˆëŠ” "ì˜¤ë¥˜>íŒŒì¼ë³µì‚¬ì˜¤ë¥˜"í•­ëª©ì„ ì°¸ê³ í•˜ì—¬ íŒŒì¼ì„ ìˆ˜ë™ ì´ë™í•˜ì„¸ìš”.
 	PAUSE)
 IF NOT EXIST "C:\Users\%username%\NCBP\programdata\chromedriver.exe" (
-	ECHO ÆÄÀÏ º¹»ç ¿À·ù!
-	ECHO ¼³Ä¡¿À·ù! NCBP.NoNaver.Com¿¡ ÀÖ´Â "¿À·ù>ÆÄÀÏº¹»ç¿À·ù"Ç×¸ñÀ» Âü°íÇÏ¿© ÆÄÀÏÀ» ¼öµ¿ ÀÌµ¿ÇÏ¼¼¿ä.
+	ECHO íŒŒì¼ ë³µì‚¬ ì˜¤ë¥˜!
+	ECHO ì„¤ì¹˜ì˜¤ë¥˜! NCBP.NoNaver.Comì— ìžˆëŠ” "ì˜¤ë¥˜>íŒŒì¼ë³µì‚¬ì˜¤ë¥˜"í•­ëª©ì„ ì°¸ê³ í•˜ì—¬ íŒŒì¼ì„ ìˆ˜ë™ ì´ë™í•˜ì„¸ìš”.
 	PAUSE)
 timeout 1
 ECHO.
-REM 2.ÇÁ·Î±×·¥ ±¸µ¿ÆÄÀÏ ÀÌµ¿¿Ï·á
+REM 2.í”„ë¡œê·¸ëž¨ êµ¬ë™íŒŒì¼ ì´ë™ì™„ë£Œ
 REM ------------------------------------------------------------
-REM 3.¹Ù·Î°¡±â »ý¼º
-ECHO 3. ¹ÙÅÁÈ­¸é¿¡ ¹Ù·Î°¡±â¸¦ »ý¼ºÇÕ´Ï´Ù.
+REM 3.ë°”ë¡œê°€ê¸° ìƒì„±
+ECHO 3. ë°”íƒ•í™”ë©´ì— ë°”ë¡œê°€ê¸°ë¥¼ ìƒì„±í•©ë‹ˆë‹¤.
 COPY "programdata\NaverCafeBackupProgram.lnk" "C:\Users\%username%\Desktop\NaverCafeBackupProgram.lnk"
 IF NOT EXIST "C:\Users\%username%\Desktop\NaverCafeBackupProgram.lnk" (
-	ECHO ¹Ù·Î°¡±âÆÄÀÏ º¹»ç ¿À·ù!
-	ECHO ¼³Ä¡¿À·ù! NCBP.NoNaver.Com¿¡ ÀÖ´Â "¿À·ù>ÆÄÀÏº¹»ç¿À·ù"Ç×¸ñÀ» Âü°íÇÏ¿© ÆÄÀÏÀ» ¼öµ¿ ÀÌµ¿ÇÏ¼¼¿ä.
+	ECHO ë°”ë¡œê°€ê¸°íŒŒì¼ ë³µì‚¬ ì˜¤ë¥˜!
+	ECHO ì„¤ì¹˜ì˜¤ë¥˜! NCBP.NoNaver.Comì— ìžˆëŠ” "ì˜¤ë¥˜>íŒŒì¼ë³µì‚¬ì˜¤ë¥˜"í•­ëª©ì„ ì°¸ê³ í•˜ì—¬ íŒŒì¼ì„ ìˆ˜ë™ ì´ë™í•˜ì„¸ìš”.
 	PAUSE)
 REM ------------------------------------------------------------
 ECHO.
-ECHO 4.ÆÄÀÌ½ã ³»ºÎ ÇÁ·Î±×·¥µéÀÇ ¼³Ä¡¸¦ ½ÃÀÛ Áß....
+ECHO 4.íŒŒì´ì¬ ë‚´ë¶€ í”„ë¡œê·¸ëž¨ë“¤ì˜ ì„¤ì¹˜ë¥¼ ì‹œìž‘ ì¤‘....
 timeout 3
 REM start programdata\NCBP_install.bat
 call "C:\ProgramData\Miniconda3\Scripts\activate.bat"
@@ -197,8 +189,8 @@ pip install selenium
 pip install jupyter
 ECHO.
 
-ECHO ¼³Ä¡°¡ ¿Ï·áµÇ¾ú½À´Ï´Ù.
-ECHO ¾Æ¹« Å°³ª ´­·¯¼­ Ã¢À» ´ÝÀ¸¼¼¿ä.
+ECHO ì„¤ì¹˜ê°€ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.
+ECHO ì•„ë¬´ í‚¤ë‚˜ ëˆŒëŸ¬ì„œ ì°½ì„ ë‹«ìœ¼ì„¸ìš”.
 PAUSE
 
 
