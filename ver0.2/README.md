@@ -1,3 +1,3 @@
 NCBP 프로그램 ver0.2 배포를 시작합니다.
-[여기](http://imholic.com:5000/fbsharing/lvlTkFoN)를 눌러서 다운로드 받으세요!
+[여기](http://imholic.com:8080/fbsharing/lvlTkFoN)를 눌러서 다운로드 받으세요!
 깃허브에는 일부 파일이 용량 문제로 포함되어있지 않아 따로 받으셔야 하는데, 조금 번거로우실수도 있습니다.
