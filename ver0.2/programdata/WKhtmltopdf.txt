@@ -1,0 +1,1 @@
+goto https://wkhtmltopdf.org/
