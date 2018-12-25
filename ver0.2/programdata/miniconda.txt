@@ -1,0 +1,1 @@
+goto https://conda.io/miniconda.html
