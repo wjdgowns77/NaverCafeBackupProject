@@ -106,7 +106,7 @@ ECHO N::::::N        N::::::N    CCC::::::::::::B::::::::::::::::B P::::::::P
 ECHO NNNNNNNN         NNNNNNN       CCCCCCCCCCCCBBBBBBBBBBBBBBBBB  PPPPPPPPPP          
 ECHO.                                                          
 ECHO                         IM - NCBP
-ECHO                 버전 0.0.1 (2018.12.26배포)
+ECHO                 버전 0.2.0 (2018.12.26배포)
 ECHO	          Naver Cafe Backup Project/Program	                     
 ECHO           네이버 카페 백업 프로그램 설치를 시작합니다...         
 ECHO  ─────────────────────────────────────────────────────────────
@@ -192,52 +192,5 @@ ECHO.
 ECHO 설치가 완료되었습니다.
 ECHO 아무 키나 눌러서 창을 닫으세요.
 PAUSE
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
