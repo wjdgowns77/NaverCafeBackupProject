@@ -48,10 +48,11 @@ GPL에 대해 간단히 설명을 드리자면, 제 스크립트(소스)를 어�
 곤란하시다면 이메일 주세요~ 별도 요청시 전염성 제거된 GPL라이선스로도 배포 가능합니다~~   
 
 # 파일 다운받기 
-[ipynb파일 받기](https://github.com/wjdgowns77/NaverCafeBackupProject/tree/master/ver0.2)  
-[설치파일 보기](https://github.com/wjdgowns77/NaverCafeBackupProject/blob/master/NaverCafeBackupProgram.ipynb)     
+[설치용 zip파일 받기](http://imholic.com:8080/fbsharing/lvlTkFoN)  
+[ver0.2 github페이지](https://github.com/wjdgowns77/NaverCafeBackupProject/tree/master/ver0.2)    
+[설치파일 스크립트 보기](https://github.com/wjdgowns77/NaverCafeBackupProject/blob/master/ver0.2/install.bat)     
 [크롤링 스크립트 보기](https://github.com/wjdgowns77/NaverCafeBackupProject/blob/master/ver0.2/programdata/NCBP.py)
-  
+ 
 # 링크
 [이곳 링크](http://ncbp.nonaver.com)          
 [제가 활동중인 카페](https://cafe.naver.com/skyplanet)        
