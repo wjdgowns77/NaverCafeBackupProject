@@ -1,4 +1,4 @@
-rd/s/q C:\Users\wjdgo\NCBP
-rd/s/q C:\Users\wjdgo\NCBP
-del/q C:\Users\wjdgo\Desktop\NaverCafeBackupProgram.lnk
-ECHO ¾ğÀÎ½ºÅç ¿Ï·á.
+rd/s/q C:\Users\%username%\NCBP
+rd/s/q C:\Users\%username%\NCBP
+del/q C:\Users\%username%\Desktop\NaverCafeBackupProgram.lnk
+ECHO ì–¸ì¸ìŠ¤í†¨ ì™„ë£Œ.
