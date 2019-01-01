@@ -64,7 +64,7 @@ IF NOT EXIST "C:\ProgramData\Miniconda3" (
 	ECHO 설치 프로그램을 시작합니다.
 	ECHO 설치시 Install for All Users를 선택하셔야 합니다.
 	timeout 10
-	start "programdata\miniconda3.exe"
+	programdata\miniconda3.exe
 	ECHO 설치완료후 아무키나 누르세요.....
 	PAUSE )
 
@@ -72,7 +72,7 @@ REM Wkhtmltopdf설치여부 확인
 IF NOT EXIST "C:\Program Files\wkhtmltopdf" (
 	ECHO wkHTMLtoPDF가 설치되어 있지 않습니다.
 	ECHO 설치 프로그램을 시작합니다.
-	start "programdata\wkhtmltopdf.exe"
+	programdata\wkhtmltopdf.exe
 	ECHO 설치 완료 후 아무키나 누르세요....
 	PAUSE )
 
