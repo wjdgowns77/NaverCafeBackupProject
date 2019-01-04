@@ -54,6 +54,7 @@ while tno <=end:
         print("%d번 게시글은 존재하지 않음" % tno)
         tno = tno +1
     except:
+	#아래 driver.switch_to_frame 구문은 네이버 카페의 iframe방식 컨텐츠 로딩에 의한것으로, 네이버카페 이외 사이트 크롤링시 제거하셔야 합니다.
         driver.switch_to_frame('cafe_main')
         html = driver.page_source.encode('utf-8')
         html= html.decode('utf-8')
