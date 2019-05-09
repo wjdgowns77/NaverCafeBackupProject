@@ -44,9 +44,9 @@ NCBP(네이버카페백업프로그램)은 파이썬 스크립트입니다.
      
 # 사용중 문제 발생시.  
 
-## 현재 chrome업데이트로 인해 chromedriver가 로딩되지 않는 현상이 있습니다.    
-이곳에서 [크롬드라이버](http://chromedriver.chromium.org/downloads) 를 받으셔서     
-C:\Users\(사용자이름)\NCBP\programdata\chromedriver.exe의 파일을 덮어쓰기 하세요!    
+### 현재 chrome최신 버젼을 여기에 포함된 chromedriver가 컨트롤 하지 못하는 현상이 있습니다.    
+### 이곳에서 [크롬드라이버](http://chromedriver.chromium.org/downloads) 를 받으셔서     
+### C:\Users\(사용자이름)\NCBP\programdata\chromedriver.exe의 파일을 덮어쓰기 하세요!    
     
 기타 문제 발생시 Admin@NoNaver.com 이메일로 해당 스크린샷을 찍어서 보내주시면 최대한 도움을 드리겠습니다.    
 카페 규모와 상황에 따라 크롤링 대행도 받습니다.(물론, 무료로요.)
