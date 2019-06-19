@@ -57,8 +57,8 @@ GPL에 대해 간단히 설명을 드리자면, 제 스크립트(소스)를 어�
      
          
 # 파일 다운받기 
-[설치용 zip파일 받기](http://imholic.com:8080/fbsharing/1Y237yX5)  
-[ver0.2 github페이지](https://github.com/wjdgowns77/NaverCafeBackupProject/tree/master/ver0.3)    
+[설치용 zip파일 받기](https://imholic.com:8081/fbsharing/7k0jfVrT)  
+[ver0.3 github페이지](https://github.com/wjdgowns77/NaverCafeBackupProject/tree/master/ver0.3)    
 [설치파일 스크립트 보기](https://github.com/wjdgowns77/NaverCafeBackupProject/blob/master/ver0.3/install.bat)     
 [크롤링 스크립트 보기](https://github.com/wjdgowns77/NaverCafeBackupProject/blob/master/ver0.3/programdata/NCBP.py)
  
