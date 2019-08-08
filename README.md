@@ -20,7 +20,7 @@ NCBP(네이버카페백업프로그램)은 파이썬으로 만들어져 있습�
 현재 배포되는 NCBP의 배포판은 파이썬의 기본 프로그램인 idle에서 돌아가고, 대부분의 외부 프로그램들을 내장해서 크롬을 빼고는 따로 설치할 프로그램은 없습니다.(파이썬(miniconda),wkhtmltppdf등의 프로그램들은 NCBP를 설치하면서 자동으로 함께 설치됩니다.)     
     
 ### 사용방법
-[이곳](https://github.com/wjdgowns77/NaverCafeBackupProject/tree/master/ver0.3)  을 참고하셔서 설치를 위한 zip파일을 받으시고, 압축을 풀어주세요.   
+[이곳](https://github.com/wjdgowns77/NaverCafeBackupProject/tree/master/ver0.31)  을 참고하셔서 설치를 위한 zip파일을 받으시고, 압축을 풀어주세요.   
 압축을 푸신 후, 해당 파일 내에 있는 install.bat파일을 더블클릭하시면 자동으로 설치가 진행됩니다.     
 설치파일 내에는 파이썬과 wkhtmltopdf같은 필수 설치파일이 포함되어 있어 별도로 받으셔서 설치하셔야 할 부분은 아마 없으실 겁니다.   
 설치가 완료된 후, 바탕화면에 있는 NaverCafeBackupProgram 바로가기를 실행하시고 창에서 지시하는대로 값을 입력하신 후 크롤링을 진행하시면 됩니다.   
