@@ -28,7 +28,7 @@ NCBP(네이버 카페 백업 프로그램)은 파이썬을 기반으로 만들�
 중간에 뜨는 검은 CMD창은 WKHTMLTOPDF프로그램으로, 창 닫으시면 안됩니다! 저장한 HTML파일을 PDF로 다시 저장할때 사용되는 파일인데, 보통 2-10개정도는 같이 떠 있어도 괜찮습니다.(참고로 창이 생기기만 하고 겁나게 쌓여가지고 너무 안 없어진다 싶으시면 크롤링 딜레이를 너무 짧게 잡으신 겁니다. 2 ~ 3초 정도 더 풀어주세요~ )      
 크롤링된 파일은 C:\Users\(사용자이름)\NCBP\CAFE 에 저장됩니다.     
      
-그리고, 혹시, 크롬 브라우저를 설치하지 않으셨다면, 별도로 설치하셔야 합니다.(Chrome설치파일은 내장되어 있지 않습니다)    
+그리고, 혹시, 크롬 브라우저를 설치하지 않으셨다면, 별도로 설치하셔야 합니다.(Chrome설치파일은 내장되어 있지 않습니다.)    
      
      
 # 사용중 문제 발생시.       
@@ -48,7 +48,7 @@ uninstall.bat파일을 실행하시면 자동으로 삭제가 진행됩니다.
 - 이미 생성된 html파일을 pdf로 변환하는 과정에서 절대경로가 지정되지 않고 상대경로가 지정되어있는 경우에 한해 사진 깨짐등의 문제가 발생하고, 네이버카페의 경우 절대경로를 지정하고 있어 이 문제는 없습니다만, 해당 프로그램을 사용하여 네이버카페만 크롤링이 가능한게 아니므로 최대한 빠른 시일 내에 *.jpeg형식으로 스크린샷을 찍어 저장하는 방식도 추가할 생각입니다. 
 - 첨부파일 저장 안되는 부분에 대해 많은 분들께서 조언주셨습니다. 나중에 첨부파일도 같이 저장할 수 있도록 개선해 보겠습니다만, 언재가 될지 잘 모르겠습니다(게을러서 죄송합니다...ㅠㅠ)
      
-
+     
 # 라이선스(사용권한)      
 라이선스(사용권한)은 간단히 GNU-GPL v3 입니다.    
 GPL에 대해 간단히 설명을 드리자면, 제 스크립트(소스)를 어떻게 쓰시든지 자유이지만, 그걸로 뭔가 다른 프로그램을 만드셨으면 그 만든 결과물을 저랑 같은 라이선스(GPL)로 배포하셔야 합니다. https://namu.wiki/w/GPL       
@@ -56,10 +56,10 @@ GPL에 대해 간단히 설명을 드리자면, 제 스크립트(소스)를 어�
      
          
 # 파일 다운받기 
-[설치용 zip파일 받기](https://imholic.com:8081/fbsharing/f4fvtPBo)  
-[ver0.32 github페이지](https://github.com/wjdgowns77/NaverCafeBackupProject/tree/master/ver0.32)    
-[설치파일 스크립트 보기](https://github.com/wjdgowns77/NaverCafeBackupProject/blob/master/ver0.32/install.bat)     
-[크롤링 스크립트 보기](https://github.com/wjdgowns77/NaverCafeBackupProject/blob/master/ver0.32/programdata/NCBP.py)
+[설치용 zip파일 받기](https://imholic.com:8081/fbsharing/1zaaLJiJ)  
+[ver0.33 github페이지](https://github.com/wjdgowns77/NaverCafeBackupProject/tree/master/ver0.33)    
+[설치파일 스크립트 보기](https://github.com/wjdgowns77/NaverCafeBackupProject/blob/master/ver0.33/install.bat)     
+[크롤링 스크립트 보기](https://github.com/wjdgowns77/NaverCafeBackupProject/blob/master/ver0.33/programdata/NCBP.py)
  
 # 링크
 [이곳 링크](http://ncbp.nonaver.com)          
