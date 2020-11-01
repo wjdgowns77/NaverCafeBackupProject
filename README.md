@@ -21,7 +21,7 @@ NCBP(네이버 카페 백업 프로그램)은 파이썬을 기반으로 만들�
 현재 배포되는 NCBP의 배포판은 파이썬의 기본 프로그램인 idle에서 돌아가고, 대부분의 외부 프로그램들을 내장해서 크롬을 빼고는 따로 설치할 프로그램은 없습니다. (크롤링에 사용되는 파이썬(miniconda),wkhtmltppdf등의 프로그램들은 NCBP를 설치하면서 자동으로 함께 설치됩니다.)     
     
 ### 사용방법
-[이곳](https://github.com/wjdgowns77/NaverCafeBackupProject/tree/master/ver0.34)  을 참고하셔서 설치를 위한 zip파일을 받으시고, 압축을 풀어주세요.   
+[이곳](https://github.com/wjdgowns77/NaverCafeBackupProject/tree/master/ver0.35)  을 참고하셔서 설치를 위한 zip파일을 받으시고, 압축을 풀어주세요.   
 압축을 푸신 후, 해당 파일 내에 있는 install.bat파일을 더블클릭하시면 자동으로 설치가 진행됩니다.     
 설치파일 내에는 파이썬과 wkhtmltopdf같은 필수 설치파일이 포함되어 있어 별도로 받으셔서 설치하셔야 할 부분은 아마 없으실 겁니다.   
 설치가 완료된 후, 바탕화면에 있는 NaverCafeBackupProgram 바로가기를 실행하시고 창에서 지시하는대로 값을 입력하신 후 크롤링을 진행하시면 됩니다.   
@@ -56,10 +56,10 @@ GPL에 대해 간단히 설명을 드리자면, 제 스크립트(소스)를 어�
      
          
 # 파일 다운받기 
-[설치용 zip파일 받기(ver0.34)](https://imholic.com:8081/fbsharing/GvfHge3M)  
-[ver0.34 github페이지 ](https://github.com/wjdgowns77/NaverCafeBackupProject/tree/master/ver0.34)    
-[설치파일 스크립트 보기](https://github.com/wjdgowns77/NaverCafeBackupProject/blob/master/ver0.34/install.bat)     
-[ 크롤링 스크립트 보기 ](https://github.com/wjdgowns77/NaverCafeBackupProject/blob/master/ver0.34/programdata/NCBP.py)
+[설치용 zip파일 받기(ver0.35)](https://imholic.com:8081/fbsharing/3t0MsW9q)  
+[ver0.35 github페이지 ](https://github.com/wjdgowns77/NaverCafeBackupProject/tree/master/ver0.35)    
+[설치파일 스크립트 보기](https://github.com/wjdgowns77/NaverCafeBackupProject/blob/master/ver0.35/install.bat)     
+[ 크롤링 스크립트 보기 ](https://github.com/wjdgowns77/NaverCafeBackupProject/blob/master/ver0.35/programdata/NCBP.py)
  
 # 링크
 [이곳 링크](http://ncbp.nonaver.com)          
@@ -71,6 +71,6 @@ GPL에 대해 간단히 설명을 드리자면, 제 스크립트(소스)를 어�
                   
                   
 
-최종 업데이트 20200729    
+최종 업데이트 20201101    
 admin@nonaver.com    
 정해준.
